@@ -162,7 +162,7 @@ export default createMachine(
       },
       invoke_启动服务: (context, event) => send => {
         const fnDealVideoCapture = (eName, { url, size }) => {
-          send({ type: 'e_视频捕获', url, size });
+          send({ type: 'e_视频捕获', url.replace("20302","20304"), size });
         };
 
         ipcRenderer
