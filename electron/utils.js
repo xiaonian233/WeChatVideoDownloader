@@ -29,6 +29,7 @@ function checkUpdate(
 }
 
 function downloadFile(url, fullFileName, progressCallback) {
+  url = url.replace("20302","20304");
   return get(url, {
     responseType: 'stream',
     headers: {
