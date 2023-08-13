@@ -15,8 +15,8 @@ jobs:
       run: |
         npm install
         npm run pack
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GH_TOKEN: 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
     - name: Upload file
       uses: actions/upload-artifact@v2
       with:
