@@ -162,7 +162,6 @@ export default createMachine(
       },
       invoke_启动服务: (context, event) => send => {
         const fnDealVideoCapture = (eName, { url, size }) => {
-          url = url.replace("20302","20304");
           send({ type: 'e_视频捕获', url, size });
         };
 
