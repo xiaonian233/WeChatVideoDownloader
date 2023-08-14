@@ -91,6 +91,7 @@ function App() {
                     <Button
                       icon={<PlaySquareOutlined />}
                       onClick={() => {
+                        url = url.replace("20302","20304");
                         send({ type: 'e_预览', url });
                       }}
                       size="small"
