@@ -16,7 +16,7 @@ jobs:
         npm install
         npm run pack
       env:
-        GH_TOKEN: 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
+        GH_TOKEN: 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
     - name: Upload file
       uses: actions/upload-artifact@v2
       with:
